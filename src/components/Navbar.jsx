@@ -1,32 +1,69 @@
 import React from 'react'
+import Facebook from '../assets/logo-facebook.jpg'
+import Instagram from '../assets/logo-instagram.jpg'
+import Github from '../assets/logo-github.jpg'
 
 const Navbar = () => {
   return (
-        <nav className="fixed w-full h-14 bg-gray-600 text-white">
+        <nav className="fixed w-full h-20 bg-background text-white flex items-center">
           {/* Container */}
-          <div class="flex w-full h-14 justify-between items-center px-6 ">
+          <div class="flex w-full h-14 justify-between items-center px-6">
             {/* Logo */}
             <div>
               <img />
             </div>
             {/* Navigation */}
             <div>
-              <ul className="flex">
-                <li className="px-4"> <a href="#">Home</a> </li>
-                <li className="px-4"> <a href="#">About</a> </li>
-                <li className="px-4"> <a href="#">Skills</a> </li>
-                <li className="px-4"> <a href="#">Work</a> </li>
-                <li className="px-4"> <a href="#">Contact</a> </li>
+              <ul className="flex items-center align-middle">
+                <div className="relative group mx-4">
+                  <div className="absolute inset-0 opacity-50 group-hover:opacity-100 bg-gradient-to-r from-primary via-purple-800 to-primary transition duration-500 rounded-lg blur-sm group-hover:blur-md"></div>
+                    <li className="relative px-4 transition rounded-lg h-8 px-4 text-center justify-center bg-background group-hover:bg-black opacity-80 hover:opacity-100 transition duration-500"> 
+                      <a className="" href="#">Naslovnica</a> 
+                    </li>
+                </div>
+
+                <div className="relative group mx-4">
+                  <div className="absolute inset-0 opacity-50 group-hover:opacity-100 bg-gradient-to-r from-primary via-purple-800 to-secondary transition duration-500 rounded-lg blur-sm group-hover:blur-md"></div>
+                    <li className="relative px-4 transition rounded-lg h-8 px-4 text-center justify-center bg-background group-hover:bg-black opacity-80 hover:opacity-100 transition duration-500"> 
+                      <a className="" href="#">O meni</a> 
+                    </li>
+                </div>
+
+                <div className="relative group mx-4">
+                  <div className="absolute inset-0 opacity-50 group-hover:opacity-100 bg-secondary transition duration-500 rounded-lg blur-sm group-hover:blur-md"></div>
+                    <li className="relative px-4 transition rounded-lg h-8 px-4 text-center justify-center bg-background group-hover:bg-black opacity-80 hover:opacity-100 transition duration-500"> 
+                      <a className="" href="#">Vještine</a> 
+                    </li>
+                </div>
+
+                <div className="relative group mx-4">
+                  <div className="absolute inset-0 opacity-50 group-hover:opacity-100 bg-gradient-to-r from-secondary via-purple-800 to-primary transition duration-500 rounded-lg blur-sm group-hover:blur-md"></div>
+                    <li className="relative px-4 transition rounded-lg h-8 px-4 text-center justify-center bg-background group-hover:bg-black opacity-80 hover:opacity-100 transition duration-500"> 
+                      <a className="" href="#">Projekti</a> 
+                    </li>
+                </div>
+
+                <div className="relative group mx-4">
+                  <div className="absolute inset-0 opacity-50 group-hover:opacity-100 bg-gradient-to-r from-primary via-purple-800 to-secondary transition duration-500 rounded-lg blur-sm group-hover:blur-md"></div>
+                    <li className="relative px-4 transition rounded-lg h-8 px-4 text-center justify-center bg-background group-hover:bg-black opacity-80 hover:opacity-100 transition duration-500"> 
+                      <a className="" href="#">Kontakt</a> 
+                    </li>
+                </div>
               </ul>
             </div>
             {/* Social icons */}
-            <div className="absolute top-[900%] left-0 z-10">
-              <ul>
-                <a href="#"> <li className="w-28 h-12 bg-gray-600 items-center text-center"> Facebook </li> </a>
-                <a href="#"> <li className="w-28 h-12 bg-gray-600 items-center text-center"> Instagram </li> </a>
-                <a href="#"> <li className="w-28 h-12 bg-gray-600 items-center text-center"> Github </li> </a>
-              </ul>
-            </div>
+                <a className="absolute top-[600%] -left-28 flex flex-row items-center hover:translate-x-28 transition duration-200" href="#"> 
+                  <li className="flex w-28 h-12 bg-gray-600 items-center px-4"> Facebook </li> 
+                  <img className="h-12 w-12 p-0" src={Facebook} /> 
+                </a>
+                <a className="absolute top-[660%] -left-28 flex flex-row items-center hover:translate-x-28 transition duration-200" href="#"> 
+                  <li className="flex w-28 h-12 bg-gray-600 items-center px-4"> Instagram </li> 
+                  <img className="h-12 w-12 p-0" src={Instagram} /> 
+                </a>
+                <a className="absolute top-[720%] -left-28 flex flex-row items-center hover:translate-x-28 transition duration-200" href="#"> 
+                  <li className="flex w-28 h-12 bg-gray-600 items-center px-4"> Github </li> 
+                  <img className="h-12 w-12 p-0" src={Github} /> 
+                </a>
           </div>
         </nav>        
   )
