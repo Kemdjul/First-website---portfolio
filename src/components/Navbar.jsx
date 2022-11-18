@@ -17,35 +17,35 @@ const Navbar = () => {
               <ul className="flex items-center align-middle">
                 <div className="relative group mx-4">
                   <div className="absolute inset-0 opacity-50 group-hover:opacity-100 bg-gradient-to-r from-primary via-purple-800 to-primary transition duration-500 rounded-lg blur-sm group-hover:blur-md"></div>
-                    <li className="relative px-4 transition rounded-lg h-8 px-4 text-center justify-center bg-background group-hover:bg-black opacity-80 hover:opacity-100 transition duration-500"> 
+                    <li className="relative px-4 rounded-lg h-8 text-center justify-center bg-background group-hover:bg-black opacity-80 hover:opacity-100 transition duration-500"> 
                       <a className="" href="#">Naslovnica</a> 
                     </li>
                 </div>
 
                 <div className="relative group mx-4">
                   <div className="absolute inset-0 opacity-50 group-hover:opacity-100 bg-gradient-to-r from-primary via-purple-800 to-secondary transition duration-500 rounded-lg blur-sm group-hover:blur-md"></div>
-                    <li className="relative px-4 transition rounded-lg h-8 px-4 text-center justify-center bg-background group-hover:bg-black opacity-80 hover:opacity-100 transition duration-500"> 
+                    <li className="relative px-4 rounded-lg h-8 text-center justify-center bg-background group-hover:bg-black opacity-80 hover:opacity-100 transition duration-500"> 
                       <a className="" href="#">O meni</a> 
                     </li>
                 </div>
 
                 <div className="relative group mx-4">
                   <div className="absolute inset-0 opacity-50 group-hover:opacity-100 bg-secondary transition duration-500 rounded-lg blur-sm group-hover:blur-md"></div>
-                    <li className="relative px-4 transition rounded-lg h-8 px-4 text-center justify-center bg-background group-hover:bg-black opacity-80 hover:opacity-100 transition duration-500"> 
+                    <li className="relative px-4 rounded-lg h-8 text-center justify-center bg-background group-hover:bg-black opacity-80 hover:opacity-100 transition duration-500"> 
                       <a className="" href="#">Vještine</a> 
                     </li>
                 </div>
 
                 <div className="relative group mx-4">
                   <div className="absolute inset-0 opacity-50 group-hover:opacity-100 bg-gradient-to-r from-secondary via-purple-800 to-primary transition duration-500 rounded-lg blur-sm group-hover:blur-md"></div>
-                    <li className="relative px-4 transition rounded-lg h-8 px-4 text-center justify-center bg-background group-hover:bg-black opacity-80 hover:opacity-100 transition duration-500"> 
+                    <li className="relative rounded-lg h-8 px-4 text-center justify-center bg-background group-hover:bg-black opacity-80 hover:opacity-100 transition duration-500"> 
                       <a className="" href="#">Projekti</a> 
                     </li>
                 </div>
 
                 <div className="relative group mx-4">
                   <div className="absolute inset-0 opacity-50 group-hover:opacity-100 bg-gradient-to-r from-primary via-purple-800 to-secondary transition duration-500 rounded-lg blur-sm group-hover:blur-md"></div>
-                    <li className="relative px-4 transition rounded-lg h-8 px-4 text-center justify-center bg-background group-hover:bg-black opacity-80 hover:opacity-100 transition duration-500"> 
+                    <li className="relative rounded-lg h-8 px-4 text-center justify-center bg-background group-hover:bg-black opacity-80 hover:opacity-100 transition duration-500"> 
                       <a className="" href="#">Kontakt</a> 
                     </li>
                 </div>
