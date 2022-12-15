@@ -5,7 +5,7 @@ import Github from '../assets/logo-github.jpg'
 
 const Navbar = () => {
   return (
-        <nav className="fixed w-full h-20 bg-background text-white flex items-center">
+        <nav className="fixed w-full h-20 bg-background text-white flex items-center z-10">
           {/* Container */}
           <div class="flex w-full h-14 justify-between items-center px-6">
             {/* Logo */}
