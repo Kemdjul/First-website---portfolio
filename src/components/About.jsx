@@ -16,12 +16,12 @@ const About = () => {
                 <h2 className="text-[2.441rem] drop-shadow-neonPink font-orbitron text-right">O meni</h2>
 
                 <div className="flex flex-row">
-                  <div className="pt-8">
+                  <div className="pt-10">
                     <img src={GraduateCap} className="w-12 inline-block" />
-                    <img src={Fire} className="w-8 inline-block mr-20 mt-8" />
-                    <img src={SpartanHelmet} className="w-8 inline-block mt-8" />
+                    <img src={Fire} className="w-8 inline-block mr-20 mt-10" />
+                    <img src={SpartanHelmet} className="w-8 inline-block mt-10" />
                   </div>
-                  <div className="pt-8">
+                  <div className="pt-10">
                     <p className="font-lato opacity-90 inline-block text-lg leading-8">  Student prve godine stručnog studija računarstva.</p>
                     <p className="font-lato opacity-90 inline-block text-lg leading-8 mt-8">  Mlad i ambiciozan, pun strasti za stvaranjem jedinstvenih web aplikacija i tako pridonijeti svijetu.</p>
                     <p className="font-lato opacity-90 inline-block text-lg leading-8 mt-8">Užitak mi je ući u nove avanture i savladavanje novih izazova.</p>
@@ -31,7 +31,7 @@ const About = () => {
             </div>
             {/* Why me */}
             <div className="max-w-[500px] h-[200px]">
-                <h3 className="text-[1.953rem] mt-12 drop-shadow-neonPink font-orbitron">Zašto ja</h3>
+                <h3 className="text-[2.441rem] drop-shadow-neonPink font-orbitron">Zašto ja</h3>
                 <ul className="font-lato">
                     <li></li>
                     <li></li>
