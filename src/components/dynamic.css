@@ -14,3 +14,79 @@
         margin-left: 0em;
     }
 }
+
+@keyframes skills-anim {
+    0% {
+        opacity: 0;
+        transform-origin: left;
+        transform: scale(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform-origin: left;
+        transform: scale(100%);
+    }
+}
+
+/* Base styling for bars*/
+/* Neon bars*/
+.skills {
+    height: 0.25rem;
+
+    animation-duration: 1s;
+    animation-name: skills-anim;
+}
+/* White (background) bars */
+.skillsWhite {
+    height: 0.25rem;
+    border-radius: 9999px;
+    background-color: rgb(229 231 235);
+    position: absolute;
+
+    animation-duration: 1s;
+    animation-name: skills-anim;
+}
+
+/* Transparent bars */
+.skillsBg {
+    width: 24rem;
+    background-color: rgb(75 85 99);
+}
+/* Pink bars */
+.skillsPink {
+    position: absolute;
+    background-color: #DB1371;
+    filter: drop-shadow(0px 0px 5px #DB1371) drop-shadow(0px 0px 7px #DB1371) drop-shadow(0px 0px 3px #DB1371);
+}
+/* Blue bars */
+.skillsBlue {
+    position: absolute;
+    background-color: #00B3FE;
+    filter: drop-shadow(0px 0px 5px #00B3FE) drop-shadow(0px 0px 7px #00B3FE) drop-shadow(0px 0px 3px #00B3FE);
+}
+
+/* 80% */
+.s80 {
+    width: 19.2rem;
+}
+
+/* 85% */
+.s85 {
+    width: 20.4rem;
+}
+
+/* 75% */
+.s75 {
+    width: 18rem;
+}
+
+/* 70% */
+.s70 {
+    width: 16.8rem;
+}
+
+/* 60% */
+.s60 {
+    width: 14.4rem;
+}

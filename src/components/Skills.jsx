@@ -18,9 +18,9 @@ const Skills = () => {
         {/* Container */}
         <div className="max-w-[90%] h-[90%] text-center">
             <h2 className="mb-8 font-bold font-orbitron drop-shadow-neonBlue">Skills</h2>
-            <div className = { `${skillsVisible ? 'skills' : '' }`}>
+            <div>
             {/* Grid container */}
-              <div class="grid grid-cols-2 gap-20 " ref = {skillsRef}>
+              <div class="grid grid-cols-2 gap-20 "  ref = {skillsRef}>
                   
                   
                   {/* Development */}
@@ -30,9 +30,9 @@ const Skills = () => {
                     <div className="flex items-center mt-4">
                       <img className="w-14 mr-2" src={HtmlLogo} alt="Html 5"/>
                       <div className="flex w-[90%] h-[100%] items-center">
-                        <div className="w-96 h-1 bg-gray-600"></div>
-                        <div className="w-[19.2rem] h-1 bg-primary absolute drop-shadow-neonPink"></div>
-                        <div className="h-1 w-[19.2rem] rounded-full bg-gray-200 absolute"></div>
+                        <div className={ `${skillsVisible? 'skills skillsBg' : ''}` }></div>
+                        <div className={ `${skillsVisible ? 'skills skillsPink s80' : '' }` }></div>
+                        <div className={ `${skillsVisible? 'skillsWhite s80' : ''}` }></div>
                       </div>
                       <p className="ml-4 rounded-full">80%</p>
                     </div>
@@ -40,9 +40,9 @@ const Skills = () => {
                     <div className="flex items-center mt-4">
                       <img className="w-14 mr-2" src={CSSLogo} alt="CSS"/>
                       <div className="flex w-[90%] h-[100%] items-center">
-                        <div className="w-96 h-1 bg-gray-600"></div>
-                        <div className="w-[20.4rem] h-1 bg-primary absolute drop-shadow-neonPink"></div>
-                        <div className="h-1 w-[20.4rem] rounded-full bg-gray-200 absolute"></div>
+                        <div className={ `${skillsVisible? 'skills skillsBg' : ''}` }></div>
+                        <div className={ `${skillsVisible ? 'skills skillsPink s85' : '' }` }></div>
+                        <div className={ `${skillsVisible? 'skillsWhite s85' : ''}` }></div>
                       </div>
                       <p className="ml-4 rounded-full">85%</p>
                     </div>
@@ -50,9 +50,9 @@ const Skills = () => {
                     <div className="flex items-center mt-4">
                       <img className="w-14 mr-2" src={JavascriptLogo} alt="Javascript"/>
                       <div className="flex w-[90%] h-[100%] items-center">
-                        <div className="w-96 h-1 bg-gray-600"></div>
-                        <div className="w-[16.8rem] h-1 bg-primary absolute drop-shadow-neonPink"></div>
-                        <div className="h-1 w-[16.8rem] rounded-full bg-gray-200 absolute"></div>
+                        <div className={ `${skillsVisible? 'skills skillsBg' : ''}` }></div>
+                        <div className={ `${skillsVisible ? 'skills skillsPink s70' : '' }` }></div>
+                        <div className={ `${skillsVisible? 'skillsWhite s70' : ''}` }></div>
                       </div>
                       <p className="ml-4 rounded-full">70%</p>
                     </div>
@@ -60,9 +60,9 @@ const Skills = () => {
                     <div className="flex items-center mt-4">
                       <img className="w-14 mr-2" src={ReactLogo} alt="React framework for Javascript"/>
                       <div className="flex w-[90%] h-[100%] items-center">
-                        <div className="w-96 h-1 bg-gray-600"></div>
-                        <div className="w-[16.8rem] h-1 bg-primary absolute drop-shadow-neonPink"></div>
-                        <div className="h-1 w-[16.8rem] rounded-full bg-gray-200 absolute"></div>
+                        <div className={ `${skillsVisible? 'skills skillsBg' : ''}` }></div>
+                        <div className={ `${skillsVisible ? 'skills skillsPink s70' : '' }` }></div>
+                        <div className={ `${skillsVisible? 'skillsWhite s70' : ''}` }></div>
                       </div>
                       <p className="ml-4 rounded-full">70%</p>
                     </div>
@@ -70,9 +70,9 @@ const Skills = () => {
                     <div className="flex items-center mt-4">
                       <img className="w-14 mr-2" src={TailwindLogo} alt="Tailwind framework for CSS"/>
                       <div className="flex w-[90%] h-[100%] items-center">
-                        <div className="w-96 h-1 bg-gray-600"></div>
-                        <div className="w-[20.4rem] h-1 bg-primary absolute drop-shadow-neonPink"></div>
-                        <div className="h-1 w-[20.4rem] rounded-full bg-gray-200 absolute"></div>
+                        <div className={ `${skillsVisible? 'skills skillsBg' : ''}` }></div>
+                        <div className={ `${skillsVisible ? 'skills skillsPink s85' : '' }` }></div>
+                        <div className={ `${skillsVisible? 'skillsWhite s85' : ''}` }></div>
                       </div>
                       <p className="ml-4 rounded-full">85%</p>
                     </div>
@@ -85,9 +85,9 @@ const Skills = () => {
                   <div className="flex items-center mt-4">
                       <img className="w-14 mr-2" src={GitLogo} alt="Git"/>
                       <div className="flex w-[90%] h-[100%] items-center">
-                        <div className="w-96 h-1 bg-gray-600"></div>
-                        <div className="w-[18rem] h-1 bg-secondary absolute drop-shadow-neonBlue"></div>
-                        <div className="h-1 w-[18rem] rounded-full bg-gray-200 absolute"></div>
+                        <div className={ `${skillsVisible? 'skills skillsBg' : ''}` }></div>
+                        <div className={ `${skillsVisible ? 'skills skillsBlue s75' : '' }` }></div>
+                        <div className={ `${skillsVisible? 'skillsWhite s75' : ''}` }></div>
                       </div>
                       <p className="ml-4 rounded-full">75%</p>
                     </div>
@@ -95,9 +95,9 @@ const Skills = () => {
                     <div className="flex items-center mt-4">
                       <img className="w-14 mr-2" src={FigmaLogo} alt="Figma"/>
                       <div className="flex w-[90%] h-[100%] items-center">
-                        <div className="w-96 h-1 bg-gray-600"></div>
-                        <div className="w-[14.4rem] h-1 bg-secondary absolute drop-shadow-neonBlue"></div>
-                        <div className="h-1 w-[14.4rem] rounded-full bg-gray-200 absolute"></div>
+                        <div className={ `${skillsVisible? 'skills skillsBg' : ''}` }></div>
+                        <div className={ `${skillsVisible ? 'skills skillsBlue s60' : '' }` }></div>
+                        <div className={ `${skillsVisible? 'skillsWhite s60' : ''}` }></div>
                       </div>
                       <p className="ml-4 rounded-full">60%</p>
                     </div>
@@ -105,9 +105,9 @@ const Skills = () => {
                     <div className="flex items-center mt-4">
                       <img className="w-14 mr-2" src={IllustratorLogo} alt="Adobe Illustrator"/>
                       <div className="flex w-[90%] h-[100%] items-center">
-                        <div className="w-96 h-1 bg-gray-600"></div>
-                        <div className="w-[16.8rem] h-1 bg-secondary absolute drop-shadow-neonBlue"></div>
-                        <div className="h-1 w-[16.8rem] rounded-full bg-gray-200 absolute"></div>
+                        <div className={ `${skillsVisible? 'skills skillsBg' : ''}` }></div>
+                        <div className={ `${skillsVisible ? 'skills skillsBlue s70' : '' }` }></div>
+                        <div className={ `${skillsVisible? 'skillsWhite s70' : ''}` }></div>
                       </div>
                       <p className="ml-4 rounded-full">70%</p>
                     </div>
@@ -115,9 +115,9 @@ const Skills = () => {
                     <div className="flex items-center mt-4">
                       <img className="w-14 mr-2" src={GimpLogo} alt="Gimp"/>
                       <div className="flex w-[90%] h-[100%] items-center">
-                        <div className="w-96 h-1 bg-gray-600"></div>
-                        <div className="w-[19.2rem] h-1 bg-secondary absolute drop-shadow-neonBlue"></div>
-                        <div className="h-1 w-[19.2rem] rounded-full bg-gray-200 absolute"></div>
+                        <div className={ `${skillsVisible? 'skills skillsBg' : ''}` }></div>
+                        <div className={ `${skillsVisible ? 'skills skillsBlue s80' : '' }` }></div>
+                        <div className={ `${skillsVisible? 'skillsWhite s80' : ''}` }></div>
                       </div>
                       <p className="ml-4 rounded-full">80%</p>
                     </div>
