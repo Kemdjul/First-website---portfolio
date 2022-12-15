@@ -1,0 +1,16 @@
+.home {
+    animation-duration: 4s;
+    animation-name: home-anim;
+}
+
+@keyframes home-anim {
+    0% {
+        opacity: 0;
+        margin-left: -9em;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0em;
+    }
+}
