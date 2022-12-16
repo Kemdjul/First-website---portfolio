@@ -8,16 +8,17 @@ import FigmaLogo from '../assets/figma-logo.png'
 import IllustratorLogo from '../assets/illustrator-logo.png'
 import GitLogo from '../assets/git-logo.png'
 import GimpLogo from '../assets/gimp-logo.png'
+import CountUp from 'react-countup'
 import { useInView } from 'react-intersection-observer'
 
 const Skills = () => {
   const { ref: skillsRef, inView: skillsVisible } = useInView();
 
   return (
-    <div className="bg-background text-white h-screen w-full flex justify-center items-center">
+    <div className="bg-background text-white h-screen w-full flex justify-center items-center pt-28" id="skills">
         {/* Container */}
         <div className="max-w-[90%] h-[90%] text-center">
-            <h2 className="mb-8 font-bold font-orbitron drop-shadow-neonBlue">Skills</h2>
+            <h2 className="text-[2.441rem] mb-8 font-bold font-orbitron drop-shadow-neonBlue">Skills</h2>
             <div>
             {/* Grid container */}
               <div class="grid grid-cols-2 gap-20 "  ref = {skillsRef}>
@@ -34,7 +35,7 @@ const Skills = () => {
                         <div className={ `${skillsVisible ? 'skills skillsPink s80' : '' }` }></div>
                         <div className={ `${skillsVisible? 'skillsWhite s80' : ''}` }></div>
                       </div>
-                      <p className="ml-4 rounded-full">80%</p>
+                      <p className="ml-4 rounded-full">{skillsVisible ? <CountUp end={85} duration={1} suffix="%" /> : ''}</p>
                     </div>
 
                     <div className="flex items-center mt-4">
@@ -44,7 +45,7 @@ const Skills = () => {
                         <div className={ `${skillsVisible ? 'skills skillsPink s85' : '' }` }></div>
                         <div className={ `${skillsVisible? 'skillsWhite s85' : ''}` }></div>
                       </div>
-                      <p className="ml-4 rounded-full">85%</p>
+                      <p className="ml-4 rounded-full">{skillsVisible ? <CountUp end={85} duration={1} suffix="%" /> : ''}</p>
                     </div>
 
                     <div className="flex items-center mt-4">
@@ -54,7 +55,7 @@ const Skills = () => {
                         <div className={ `${skillsVisible ? 'skills skillsPink s70' : '' }` }></div>
                         <div className={ `${skillsVisible? 'skillsWhite s70' : ''}` }></div>
                       </div>
-                      <p className="ml-4 rounded-full">70%</p>
+                      <p className="ml-4 rounded-full">{skillsVisible ? <CountUp end={70} duration={1} suffix="%" /> : ''}</p>
                     </div>
 
                     <div className="flex items-center mt-4">
@@ -64,7 +65,7 @@ const Skills = () => {
                         <div className={ `${skillsVisible ? 'skills skillsPink s70' : '' }` }></div>
                         <div className={ `${skillsVisible? 'skillsWhite s70' : ''}` }></div>
                       </div>
-                      <p className="ml-4 rounded-full">70%</p>
+                      <p className="ml-4 rounded-full">{skillsVisible ? <CountUp end={70} duration={1} suffix="%" /> : ''}</p>
                     </div>
 
                     <div className="flex items-center mt-4">
@@ -74,7 +75,7 @@ const Skills = () => {
                         <div className={ `${skillsVisible ? 'skills skillsPink s85' : '' }` }></div>
                         <div className={ `${skillsVisible? 'skillsWhite s85' : ''}` }></div>
                       </div>
-                      <p className="ml-4 rounded-full">85%</p>
+                      <p className="ml-4 rounded-full">{skillsVisible ? <CountUp end={85} duration={1} suffix="%" /> : ''}</p>
                     </div>
 
                   </section>
@@ -89,7 +90,7 @@ const Skills = () => {
                         <div className={ `${skillsVisible ? 'skills skillsBlue s75' : '' }` }></div>
                         <div className={ `${skillsVisible? 'skillsWhite s75' : ''}` }></div>
                       </div>
-                      <p className="ml-4 rounded-full">75%</p>
+                      <p className="ml-4 rounded-full">{skillsVisible ? <CountUp end={75} duration={1} suffix="%" /> : ''}</p>
                     </div>
 
                     <div className="flex items-center mt-4">
@@ -99,7 +100,7 @@ const Skills = () => {
                         <div className={ `${skillsVisible ? 'skills skillsBlue s60' : '' }` }></div>
                         <div className={ `${skillsVisible? 'skillsWhite s60' : ''}` }></div>
                       </div>
-                      <p className="ml-4 rounded-full">60%</p>
+                      <p className="ml-4 rounded-full">{skillsVisible ? <CountUp end={60} duration={1} suffix="%" /> : ''}</p>
                     </div>
 
                     <div className="flex items-center mt-4">
@@ -109,7 +110,7 @@ const Skills = () => {
                         <div className={ `${skillsVisible ? 'skills skillsBlue s70' : '' }` }></div>
                         <div className={ `${skillsVisible? 'skillsWhite s70' : ''}` }></div>
                       </div>
-                      <p className="ml-4 rounded-full">70%</p>
+                      <p className="ml-4 rounded-full">{skillsVisible ? <CountUp end={70} duration={1} suffix="%" /> : ''}</p>
                     </div>
 
                     <div className="flex items-center mt-4">
@@ -119,7 +120,7 @@ const Skills = () => {
                         <div className={ `${skillsVisible ? 'skills skillsBlue s80' : '' }` }></div>
                         <div className={ `${skillsVisible? 'skillsWhite s80' : ''}` }></div>
                       </div>
-                      <p className="ml-4 rounded-full">80%</p>
+                      <p className="ml-4 rounded-full">{skillsVisible ? <CountUp end={80} duration={1} suffix="%" /> : ''}</p>
                     </div>
 
                   </section>

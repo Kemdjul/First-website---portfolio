@@ -1,6 +1,6 @@
 .home {
-    animation-duration: 4s;
-    animation-name: home-anim;
+    animation: home-anim 4s forwards;
+    opacity: 0;
 }
 
 @keyframes home-anim {
@@ -36,7 +36,7 @@
 
     animation-duration: 1s;
     animation-name: skills-anim;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease;
 }
 /* White (background) bars */
 .skillsWhite {
@@ -91,4 +91,39 @@
 /* 60% */
 .s60 {
     width: 14.4rem;
+}
+
+
+
+@keyframes about-anim {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* About page */
+.about {
+    animation: about-anim 0.65s steps(15, end) forwards;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0.01%
+}
+
+.delay-1 {
+    animation-delay: 250ms;
+}
+
+.delay-2 {
+    animation-delay: 1s;
+}
+
+.delay-3 {
+    animation-delay: 1.3s;
+}
+
+.delay-4 {
+    animation-delay: 2s;
+}
+
+.delay-5 {
+    animation-delay: 3s;
 }

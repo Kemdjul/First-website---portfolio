@@ -1,12 +1,15 @@
 import React from 'react'
+import { useInView } from 'react-intersection-observer'
 
 const Contact = () => {
+  const { ref: contactRef, inView: contactVisible } = useInView();
+
   return (
-    <div className="bg-background text-white h-screen w-full justify-center items-center flex">
+    <div className="bg-background text-white h-screen w-full justify-center items-center flex pt-28" id="contact">
         {/* Container */}
-        <form className="min-w-[35%] flex flex-col" action="">
+        <form className="min-w-[35%] flex flex-col" action="" ref={contactRef}>
           <div className="text-center">
-            <h2 className="drop-shadow-neonBlue font-orbitron">Kontakt</h2>
+            <h2 className={`${contactVisible ? 'about text-[2.441rem] drop-shadow-neonBlue font-orbitron' : ''} `}>Kontakt</h2>
             <p className="font-lato mt-4">Kontaktirajte me ukoliko ste zainteresirani surađivati sa mnom</p>
           </div>
 

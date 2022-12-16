@@ -7,6 +7,10 @@
         font-size: 16px;
     }
 
+    #root {
+        width: 101.1%;
+    }
+
     h1 {
         font-size: 3.157rem;
     }

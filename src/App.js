@@ -4,11 +4,13 @@ import Home from "./components/Home.jsx";
 import Navbar from './components/Navbar.jsx';
 import Skills from "./components/Skills.jsx";
 import Work from "./components/Work.jsx";
+import { RemoveScrollBar } from "react-remove-scroll-bar";
 
 function App() {
   
   return (
     <div>
+      <RemoveScrollBar />
       <Navbar />
       <main>
         <Home />

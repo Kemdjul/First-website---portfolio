@@ -8,7 +8,7 @@ const Home = () => {
   
 
   return (
-    <div className="h-screen w-full bg-background font-orbitron text-white justify-center content-center flex flex-col">
+    <div className="h-screen w-full bg-background font-orbitron text-white justify-center content-center flex flex-col" id="home">
         {/* Container */}
         <div className={`${textIsVisible ? 'home' : ''}`} ref={textRef}>
           <div className="grid grid-cols-2 justify-center items-center max-w-[1200px] mx-auto gap-12">
